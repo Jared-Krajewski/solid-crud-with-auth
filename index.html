@@ -24,24 +24,27 @@
          <p id="labelStatus" class="labelStatus"></p>
        </div>
      </section>
-
+     <!-- div for document upload -->
      <div hidden="hidden" id="write" class="panel">
        <div class="row">
          <form id="writeForm">
             <label for="cars">Choose Document Type To Upload</label>
+            <!-- documentValue in index.js -->
             <select name="document" id="document">
               <option value="Bank Statement">Bank Statement</option>
               <option value="Passport">Passport</option>
               <option value="Driver License">Driver License</option>
             </select>
             <br></br>
-            <p>enter expiry date </p>
+            <!-- endDateValue in index.js -->
+            <p>expiration date </p>
             <input id="date" type="date"></input>
             <br>
+            <!-- descriptionValue in index.js -->
             <p>enter description</p>
             <input id="description" size="50"></input>
             <br>
-            <!-- <p/> -->
+            <!-- fileList in index.js -->
            <label id="writelabel" for="input_file"></label>
            <input
              type="file"
@@ -59,7 +62,7 @@
          <dd id="labelWriteStatus" class="labelStatus">...not written yet...</dd>
        </dl>
      </div>
-
+     <!-- div for document query -->
      <div hidden="hidden" id="query" class="panel">
         <div class="row">
           <form id="queryData">
@@ -70,7 +73,6 @@
                <option value="Driver License">Driver License</option>
              </select>
              <br/>
-             <!-- <p/> -->
             <button type="submit">
               Query
             </button>
@@ -81,6 +83,10 @@
           <dd id="labelQueryData" class="labelStatus">...not written yet...</dd>
         </dl>
       </div>
-     
+     <div class="panel">
+
+          <p id="testQuery"> </p>
+
+     </div>
    </body>
  </html>
